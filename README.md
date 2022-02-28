@@ -22,7 +22,7 @@ EndPointChart:
 Make Sure your Visual Studio supports .NET SDK 6.0 version to run project successfully 
 
 
-## CI workflow action was added to repository 
+###### CI workflow action was added to repository 
 every change triggers a build test run.
 
-## Docker publich workflow was added and 
+###### Docker publich workflow was added and 
