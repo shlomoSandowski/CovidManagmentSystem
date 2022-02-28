@@ -135,25 +135,7 @@ namespace CovidManagementSystem.UnitTest
             // Assert
             Assert.IsNotInstanceOfType(badResult, typeof(OkResult));
         }
-        [TestMethod]
-        public void AddSiteToRoute_InvalidInput_ValidationError()
-        {
-            //setup
-            Address address = new Address("city", "street", 0, 0);
-            NewPatientVisitedSite site = new NewPatientVisitedSite
-            {
-                dateOfVisit = DateTime.Now,
-                siteAddress = address
-            };
-            var repo = new Mock<ICovidSystemManager>();
-            var controller = new CovidMgmtSystemController(repo.Object);
-
-            //act
-            var result = controller.AddSiteToRoute("test", site);
-
-            // Assert
-            Assert.IsInstanceOfType(result,typeof(ActionResult<List<NewPatientVisitedSite>>));
-        }
+    
         [TestMethod]
         public void AddPatientRoute_InvalidRoute_BadResponse()
         {
