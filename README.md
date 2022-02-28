@@ -11,9 +11,14 @@ EndPointChart:
 
 
 ## How to Install and Run the Project
+1.Click on Green button Code
+2.Download zip 
+3.Open CovidManagmentSystem.sln
+4.Compile project
+5.Swagger API will open in browser
 
 
-
-## 
+## FF
+Make Sure your Visual Studio supports .NET SDK 6.0 version to run project successfully 
 
 
